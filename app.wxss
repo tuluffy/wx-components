@@ -1,0 +1,60 @@
+page, view, textarea, input, text, image {
+    box-sizing: border-box;
+    /*font-size: 0;*/
+    margin: 0;
+    padding: 0;
+}
+
+/**文本溢出**/
+.line-clamp{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.line-clamp-2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+/**1px**/
+.border-top {
+    width: 100%;
+}
+
+.border-top:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 1px;
+    background-color: #e3e5e9;
+    -webkit-transform: scale(1, 0.5);
+    transform: scale(1, 0.5);
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+}
+
+.border-bottom {
+    width: 100%;
+}
+
+.border-bottom:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    background-color: #e3e5e9;
+    -webkit-transform: scale(1, 0.5);
+    transform: scale(1, 0.5);
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+}

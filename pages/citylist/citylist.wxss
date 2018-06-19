@@ -1,0 +1,211 @@
+page{
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: #F5F5F5;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.select-input-box{
+    width: 100%;
+    height: 80rpx;
+    background-color: #fff;
+
+    padding: 0 20rpx;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    left: 0;
+}
+
+.select-input{
+    width: 100%;
+    height: 60rpx;
+    border-radius: 100rpx;
+    background-color: #eee;
+
+    padding: 0 20rpx;
+
+    text-align: center;
+
+    font-size: 28rpx;
+    color: #404043;
+
+    position: relative;
+}
+
+.select-placeholder{
+    position: absolute;
+    z-index: 2;
+
+    font-size: 28rpx;
+    color: #A0A0A0;
+
+    pointer-events: none;
+}
+
+.select-placeholder text{
+    margin-left: 10rpx;
+}
+
+
+/*定位*/
+.location-box{
+    margin-top: 80rpx;
+    width: 100%;
+    height: 80rpx;
+
+    padding-left: 30rpx;
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.location-title{
+    height: 100%;
+    padding-right: 40rpx;
+
+    display: flex;
+    align-items: center;
+}
+
+.location-title text{
+    font-size: 28rpx;
+    color: #434040
+}
+
+.location-theme{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.location-icon{
+    width: 40rpx;
+    height: 40rpx;
+}
+
+.location-theme text{
+    font-size: 28rpx;
+    color: #ee735c;
+}
+
+.city-list-box{
+    flex: 1;
+    background-color: #fff;
+}
+
+.scroll-view{
+    width: 100%;
+    height: 1049rpx;    /*需要调控该高度，不知道为什么*/
+}
+
+.city-list{
+    padding-left: 20rpx;
+    margin-top: 30rpx;
+}
+
+.city-list> view:last-child:after{
+    height: 0;
+}
+
+.index-block{
+    width: 100%;
+    height: 60rpx;
+}
+
+.index-block view{
+    width: 80rpx;
+    height: 50rpx;
+
+    /*background: #ee735c;*/
+    border-radius: 100rpx;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.index-block{
+    font-size: 28rpx;
+    color: #ee735c;
+}
+
+.city{
+    width: 670rpx;
+    height: 80rpx;
+    padding-left: 10rpx;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+}
+
+.city text{
+    font-size: 28rpx;
+    color: #434040;
+}
+
+/*字母索引*/
+.index-box{
+    position: fixed;
+    top: 160rpx;
+    right: 0;
+    bottom: 40rpx;
+    width: 80rpx;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.index-box view{
+    font-size: 22rpx;
+    color: #ee735c;
+}
+
+.hotcity-box{
+    width: 100%;
+    padding: 10rpx 30rpx;
+}
+
+.hotcity-title{
+    width: 100%;
+    height: 40rpx;
+
+    font-size: 28rpx;
+    color: #434040;
+}
+
+.hot-theme{
+    margin-top: 10rpx;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.hot-theme view{
+}
+
+.hot-theme text{
+    font-size: 28rpx;
+    color: #ee735c;
+
+    padding: 4rpx 40rpx 4rpx 0;
+}

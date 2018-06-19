@@ -1,0 +1,81 @@
+<view class="container">
+    <view class="select-input-box">
+        <input class="select-input"
+               placeholder-class="placeholder-input"
+               type="text"
+               bindfocus="searchFocus"
+               bindblur="searchBlur"
+               bindinput="searchInput"
+        />
+
+        <view wx:if="{{!focused}}"
+              class="select-placeholder">
+            <i>🔍</i>
+            <text>请输入搜索内容</text>
+        </view>
+    </view>
+
+    <!--定位-->
+    <view class="location-box">
+        <view class="location-title">
+            <text>当前位置</text>
+        </view>
+
+        <view class="location-theme">
+            <image class="location-icon"
+                   src="./../../lib/image/location-icon.svg"
+            />
+            <text>{{location}}</text>
+        </view>
+    </view>
+
+    <!--城市列表-->
+    <view class="city-list-box">
+        <scroll-view class="scroll-view"
+                     scroll-y
+                     scroll-into-view="{{letter}}"
+                     scroll-top="{{scrollTop}}"
+                     scroll-with-animation="true"
+        >
+            <!--热门城市-->
+            <view class="hotcity-box">
+                <view class="hotcity-title">
+                    <text>热门城市</text>
+                </view>
+                <view class="hot-theme">
+                    <view wx:for="{{hotCity}}" wx:for-index="idx" wx:key="{{idx}}">
+                        <text>{{item.name}}</text>
+                    </view>
+                </view>
+            </view>
+
+            <!--城市列表-->
+            <view wx:for="{{city}}" wx:for-item="cityblock" wx:for-index="cityblockindex" wx:key="{{cityblockindex}}"
+                  class="city-list">
+                <view class="index-block" id="{{cityblock.title}}">
+                    <view>
+                        <text>{{cityblock.title}}</text>
+                    </view>
+                </view>
+                <view wx:for="{{cityblock.item}}" wx:for-item="cityrow" wx:for-index="cityrowindex"
+                      wx:key="{{cityrowindex}}"
+                      class="city border-bottom"
+                      data-cityname="{{cityrow.name}}"
+                      data-citykey="{{cityrow.key}}"
+                      catchtap="choice"
+                >
+                    <text>{{cityrow.name}}</text>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+
+    <view class="index-box">
+        <view wx:for="{{letters}}" wx:for-index="idx" wx:key="{{idx}}"
+              data-key="{{item}}"
+              catchtap="scrollIntoView"
+        >
+            <text>{{item}}</text>
+        </view>
+    </view>
+</view>
