@@ -13,7 +13,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "1.9.98",
 	"appid": "touristappid",
-	"projectname": "wx",
+	"projectname": "%E7%BB%84%E4%BB%B6%E5%BA%93",
 	"condition": {
 		"search": {
 			"current": -1,

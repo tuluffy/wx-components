@@ -1,0 +1,74 @@
+<view class="container"
+      catchtap="closeDatepicker"
+>
+    <view class="content"
+          catchtap="nullEventHandler"
+    >
+        <view class="datepicker-box">
+            <view class="datepicker-column">
+                <picker-view class="picker-view"
+                             indicator-class="datepicker-indicator-row"
+                             data-type="activedYear"
+                             value="{{activedYearIndex}}"
+                             bindchange="datapickerChange"
+                >
+                    <picker-view-column>
+                        <view wx:for="{{years}}" wx:for-index="idx" wx:key="{{idx}}"
+                              class="datepicker-row"
+                        >
+                            {{item}}年
+                        </view>
+                    </picker-view-column>
+                </picker-view>
+            </view>
+
+            <view class="datepicker-column">
+                <picker-view class="picker-view"
+                             indicator-class="datepicker-indicator-row"
+                             data-type="activedMonth"
+                             value="{{activedMonthIndex}}"
+                             bindchange="datapickerChange"
+                >
+                    <picker-view-column>
+                        <view wx:for="{{months}}" wx:for-index="idx" wx:key="{{idx}}"
+                              class="datepicker-row"
+                        >
+                            {{item}}月
+                        </view>
+                    </picker-view-column>
+                </picker-view>
+            </view>
+
+            <view class="datepicker-column">
+                <picker-view class="picker-view"
+                             indicator-class="datepicker-indicator-row"
+                             data-type="activedDay"
+                             value="{{activedDayIndex}}"
+                             bindchange="datapickerChange"
+                >
+                    <picker-view-column>
+                        <view wx:for="{{days}}" wx:for-index="idx" wx:key="{{idx}}"
+                              class="datepicker-row"
+                        >
+                            {{item}}日
+                        </view>
+                    </picker-view-column>
+                </picker-view>
+            </view>
+        </view>
+
+        <view class="btn-box">
+            <view class="btn-common btn-confirm"
+                  catchtap="confirm"
+            >
+                <text>确认</text>
+            </view>
+            <view class="btn-common btn-cancel border-top"
+                  catchtap="cancel"
+            >
+                <text>取消</text>
+            </view>
+        </view>
+    </view>
+
+</view>

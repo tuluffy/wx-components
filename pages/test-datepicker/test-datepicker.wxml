@@ -1,0 +1,12 @@
+<view class="container">
+    <view catchtap="showDatepicker">点击展示时间选择器</view>
+
+    <block wx:if="{{isShowDatepicker}}">
+        <Datepicker startYear="2010"
+                    endYear="2018"
+                    propsActiveDate="{{date}}"
+                    bind:DispatchDatepickerConfirm="datepickerConfirm"
+                    bind:DispatchCloseDatepicker="closeDatepicker"
+        />
+    </block>
+</view>

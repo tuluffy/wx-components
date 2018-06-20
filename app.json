@@ -1,6 +1,6 @@
 {
   "pages":[
-    "pages/citylist/citylist"
+    "pages/test-datepicker/test-datepicker"
   ],
   "window":{
     "backgroundTextStyle":"light",

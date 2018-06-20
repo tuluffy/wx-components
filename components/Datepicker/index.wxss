@@ -1,0 +1,88 @@
+@import "./../../app.wxss";
+
+page{
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.content{
+    width: 100%;
+    height: 590rpx;
+
+    background-color: #e7e7e7;
+}
+
+.datepicker-box{
+    width: 750rpx;
+    height: 500rpx;
+
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.datepicker-column{
+    flex: 1;
+    padding: 0 40rpx;
+}
+
+.picker-view{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.datepicker-indicator-row{
+    height: 100rpx;
+}
+
+.btn-box{
+    width: 100%;
+    height: 90rpx;
+
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.btn-common{
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 30rpx;
+}
+
+.btn-confirm{
+    color: #fff;
+    background-color: #ee735c;
+}
+
+.btn-cancel{
+    color: #5A5D5C;
+    background-color: #fff;
+    position: relative;
+}
+
+.datepicker-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 30rpx;
+    color: #262B28;
+}
