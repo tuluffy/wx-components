@@ -1,6 +1,7 @@
 {
   "pages":[
-    "pages/test-datepicker/test-datepicker"
+    "pages/test-datepicker/test-datepicker",
+    "pages/test-sectionlist/test-sectionlist"
   ],
   "window":{
     "backgroundTextStyle":"light",

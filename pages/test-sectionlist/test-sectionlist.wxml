@@ -1,0 +1,38 @@
+<view class="container">
+    <view class="section-box">
+        <view wx:for="{{sectionConfig}}" wx:for-index="idx" wx:key="{{idx}}"
+              data-sectionThemeKey="{{item.key}}"
+              catchtap="selectSectionTheme"
+        >
+            <view class="section-theme">
+                <text class="{{sectionThemeKey == item.key || condition[idx].active ? 'section-theme-text-active' : 'section-theme-text'}}"
+                >{{condition[idx].active ? condition[idx].theme : item.theme}}
+                </text>
+            </view>
+            <image class="section-theme-icon"
+                   src="{{sectionThemeKey == item.key ? './../../lib/icon/select-up-active.svg' : './../../lib/icon/select-down.svg'}}"
+            />
+        </view>
+    </view>
+
+    <block wx:if="{{!!showList}}">
+        <view class="list-box">
+            <view wx:for="{{listConfig}}" wx:for-index="idx" wx:key="{{idx}}"
+                  class="border-top"
+                  data-listThemeKey="{{item.key}}"
+                  catchtap="selectListTheme"
+            >
+                <view class="list-theme">
+                    <text class="list-theme-text {{listThemeKey == item.key ? 'list-theme-text-active' : ''}}">{{item.theme}}</text>
+                </view>
+                <view wx:if="{{listThemeKey == item.key}}"
+                      class="list-icon-box"
+                >
+                    <image class="item-theme-icon"
+                           src="./../../lib/icon/selected.svg"
+                    />
+                </view>
+            </view>
+        </view>
+    </block>
+</view>
