@@ -3,5 +3,6 @@
   "navigationBarTextStyle": "white",
   "navigationBarTitleText": "选项卡",
   "usingComponents": {
+    "Section": "./../../components/Section/index"
   }
 }

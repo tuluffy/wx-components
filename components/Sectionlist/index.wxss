@@ -1,0 +1,47 @@
+@import "./../../app.wxss";
+
+.container{
+    width: 100%;
+    background-color: #fff;
+
+    padding: 0 30rpx 0 20rpx;
+}
+
+.container> view{
+    width: 100%;
+    height: 80rpx;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    position: relative;
+}
+
+.item-theme-box{
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+}
+
+.item-theme{
+    font-size: 28rpx;
+    color: #434040;
+}
+
+.item-theme-active{
+    color: #ee735c;
+}
+
+.item-icon-box{
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+}
+
+.item-icon{
+    width: 30rpx;
+    height: 30rpx;
+}

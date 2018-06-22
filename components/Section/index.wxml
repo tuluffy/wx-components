@@ -1,0 +1,24 @@
+<view class="container">
+    <view class="section-box">
+        <view wx:for="{{propsSectionConfig}}" wx:for-index="idx" wx:key="{{idx}}"
+              data-sectionThemeKey="{{item.key}}"
+              catchtap="selectSectionTheme"
+        >
+            <view class="section-theme">
+                <view class="line-clamp section-theme-text {{sectionThemeKey == item.key ? 'section-theme-text-active' : ''}}"
+                >{{condition[idx].key ? condition[idx].theme : item.theme}}
+                </view>
+            </view>
+            <image class="section-theme-icon"
+                   src="{{sectionThemeKey == item.key ? './../../lib/icon/select-up-active.svg' : './../../lib/icon/select-down.svg'}}"
+            />
+        </view>
+    </view>
+
+    <block wx:if="{{showList}}">
+        <Sectionlist propsListConfig="{{listConfig}}"
+                     propsReviewCondition="{{condition[themeIndex]}}"
+                     bind:DispatchSelectListTheme="selectListTheme"
+        />
+    </block>
+</view>

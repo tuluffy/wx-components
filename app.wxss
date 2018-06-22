@@ -58,3 +58,12 @@ page, view, textarea, input, text, image {
     -webkit-transform-origin: center bottom;
     transform-origin: center bottom;
 }
+
+/*文本一行显示，溢出使用...代替*/
+.line-clamp {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}

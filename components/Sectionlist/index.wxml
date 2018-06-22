@@ -1,0 +1,18 @@
+<view class="container">
+    <view wx:for="{{propsListConfig}}" wx:for-index="idx" wx:key="{{idx}}"
+          class="border-top"
+          data-listTheme="{{item.theme}}"
+          data-listThemeKey="{{item.key}}"
+          catchtap="selectListTheme"
+    >
+        <view class="item-theme-box">
+            <view class="item-theme {{listThemeKey == item.key ? 'item-theme-active' : '' }}">{{item.theme}}</view>
+        </view>
+        <view wx:if="{{listThemeKey == item.key}}"
+              class="item-icon-box">
+            <image class="item-icon"
+                   src="./../../lib/icon/selected.svg"
+            />
+        </view>
+    </view>
+</view>

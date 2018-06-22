@@ -1,50 +1,72 @@
+import {uuid} from '../../../tool/uuid/index';
+
 export const sectionConfig = [
    {
-      theme: '综合',
-      key: 'aaa',
+      theme: '主题一',
+      key: uuid(),
       children: [
          {
-            theme: '按销量排序',
-            key: '0',
+            theme: '方式一',
+            key: uuid(),
          },
          {
-            theme: '价格降序',
-            key: '1',
+            theme: '方式二',
+            key: uuid(),
          },
          {
-            theme: '价格升序',
-            key: '2',
+            theme: '方式三',
+            key: uuid(),
          },
       ]
    },
    {
-      theme: '旅游类型',
-      key: 'bbb',
+      theme: '主题二',
+      key: uuid(),
       children: [
          {
             theme: '全部',
-            key: '0',
+            key: uuid(),
          },
          {
-            theme: '跟团游',
-            key: '1',
+            theme: '方式一',
+            key: uuid(),
          },
          {
-            theme: '半自助游',
-            key: '2',
+            theme: '方式二',
+            key: uuid(),
          },
          {
-            theme: '自助游',
-            key: '3',
+            theme: '方式三',
+            key: uuid(),
+         },{
+            theme: '方式四',
+            key: uuid(),
          },
       ]
    },
    {
-      theme: '出发地',
-      key: 'ccc',
+      theme: '主题三',
+      key: uuid(),
+      children: [
+         {
+            theme: '方式一',
+            key: uuid()
+         },
+         {
+            theme: '方式二',
+            key: uuid()
+         },{
+            theme: '方式三',
+            key: uuid()
+         },{
+            theme: '方式四',
+            key: uuid()
+         }
+      ],
    },
    {
-      theme: '目的地',
-      key: 'ddd',
+      theme: '主题四',
+      key: uuid(),
+      children:[],
    },
 ];

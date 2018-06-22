@@ -1,7 +1,7 @@
-import {city} from './../../utils/city';
-import {hotCity} from './../../utils/hot-city';
-import {letters} from './../../utils/letters';
-import {throttle} from './../../utils/throttle';
+import {city} from './config/city';
+import {hotCity} from './config/hot-city';
+import {letters} from './config/letters';
+import {throttle} from '../../tool/throttle';
 
 // 获取筛选结果
 function getCityFiltered(keyword) {

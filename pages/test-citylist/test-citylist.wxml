@@ -23,7 +23,7 @@
 
         <view class="location-theme">
             <image class="location-icon"
-                   src="./../../lib/image/location-icon.svg"
+                   src="./../../lib/icon/location-icon.svg"
             />
             <text>{{location}}</text>
         </view>

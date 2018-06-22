@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "Sectionlist": "./../Sectionlist/index"
+  }
+}
+
